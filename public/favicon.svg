@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgFavicon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#18040d" />
+      <stop offset="70%" stop-color="#090105" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+    <linearGradient id="crimsonFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b53" />
+      <stop offset="50%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+    <filter id="fGlow">
+      <feGaussianBlur stdDeviation="4" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Circular Base -->
+  <circle cx="256" cy="256" r="250" fill="url(#bgFavicon)" />
+
+  <!-- Red Energy Swirls -->
+  <path d="M120,240 Q100,140 180,90 Q220,70 210,120 Q170,140 150,190 Z" fill="url(#crimsonFav)" opacity="0.6" />
+  <path d="M370,130 Q410,210 380,300 Q360,240 330,190 Z" fill="#b91c1c" opacity="0.5" />
+
+  <!-- Shield Crest Background -->
+  <path d="M256,40 L395,100 L415,280 L256,440 L97,280 L117,100 Z" 
+        fill="#0d0308" 
+        stroke="url(#crimsonFav)" 
+        stroke-width="14" 
+        filter="url(#fGlow)" />
+  <path d="M256,65 L375,118 L390,265 L256,405 L122,265 L137,118 Z" 
+        fill="#050103" 
+        stroke="#ff2e4d" 
+        stroke-width="6" />
+
+  <!-- Mascot Warrior Profile -->
+  <!-- Armor -->
+  <path d="M165,410 L195,300 L256,330 L315,300 L345,410 Z" fill="#14080f" />
+  <path d="M220,335 L256,360 L290,335 L280,375 L256,390 L230,375 Z" fill="url(#crimsonFav)" stroke="#ff4d68" stroke-width="3" />
+  <path d="M205,250 L230,320 L280,320 L305,250 Z" fill="#0f050b" stroke="#ff2a4b" stroke-width="4" />
+
+  <!-- Face & Glowing Eye -->
+  <path d="M220,150 L235,235 L285,230 L320,185 L310,140 L260,130 Z" fill="#f0cdc2" />
+  <path d="M220,150 L235,235 L270,232 L260,170 L245,150 Z" fill="#b88072" />
+  <polygon points="280,165 305,160 300,172 278,172" fill="#0d0408" />
+  <polygon points="284,166 302,163 298,170 283,170" fill="#ff1133" filter="url(#fGlow)" />
+  <circle cx="294" cy="166" r="3.5" fill="#ffffff" />
+  <path d="M272,175 L288,195" stroke="#ff2a4b" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- Spiky Black Hair with Crimson Edge Light -->
+  <path d="M195,165 L215,95 L260,70 L330,75 L360,120 L370,165 L335,160 L345,135 L310,125 L320,105 L265,100 L240,125 L235,150 L220,135 L200,165 Z" fill="#0d0408" />
+  <path d="M255,75 L285,35 L305,70 L345,45 L350,90 L385,80 L375,130 L405,120 L375,165 L350,150" fill="#14060e" />
+  <path d="M280,38 L300,70" stroke="#ff2e4d" stroke-width="7" stroke-linecap="round" filter="url(#fGlow)" />
+  <path d="M340,48 L348,88" stroke="#ff2e4d" stroke-width="8" stroke-linecap="round" filter="url(#fGlow)" />
+  <path d="M380,82 L372,128" stroke="#ff2e4d" stroke-width="7" stroke-linecap="round" filter="url(#fGlow)" />
+  <path d="M400,122 L372,162" stroke="#ff2e4d" stroke-width="7" stroke-linecap="round" filter="url(#fGlow)" />
+
+  <!-- Metallic Nameplate -->
+  <path d="M80,360 L432,360 L412,410 L100,410 Z" fill="#181316" stroke="#ff2e4d" stroke-width="4" />
+  <circle cx="95" cy="385" r="4.5" fill="#9ca3af" />
+  <circle cx="417" cy="385" r="4.5" fill="#9ca3af" />
+  <text x="256" y="396" font-family="sans-serif" font-size="34" font-weight="900" letter-spacing="4" fill="#ffffff" text-anchor="middle" stroke="#ff1e38" stroke-width="1.2">DOMAIN</text>
+
+  <path d="M130,410 L382,410 L362,445 L150,445 Z" fill="#0d0206" stroke="#ef4444" stroke-width="3" />
+  <text x="256" y="437" font-family="sans-serif" font-size="22" font-weight="900" letter-spacing="4" fill="#ff2a4b" text-anchor="middle">FF STORE</text>
+
+  <!-- Circular Glowing Border Frame -->
+  <circle cx="256" cy="256" r="248" fill="none" stroke="#ff2e4d" stroke-width="5" filter="url(#fGlow)" />
+  <circle cx="256" cy="256" r="251" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.9" />
+</svg>
