@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --crimson-primary: #ef4444;
+    --crimson-deep: #b91c1c;
+    --crimson-glow: rgba(239, 68, 68, 0.5);
+    --crimson-subtle: rgba(239, 68, 68, 0.12);
+    --obsidian-deep: #080306;
+    --obsidian-card: #0f070c;
+    --ruby-accent: #f43f5e;
+    --emerald-safe: #10b981;
+  }
+
+  body {
+    background-color: #080306;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(220, 38, 38, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 15% 30%, rgba(185, 28, 28, 0.06) 0%, transparent 40%),
+      radial-gradient(circle at 85% 70%, rgba(244, 63, 94, 0.05) 0%, transparent 45%),
+      linear-gradient(to bottom, #090306 0%, #060205 100%);
+    background-attachment: fixed;
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Unique Brand Title Style */
+.domain-ff-brand {
+  font-family: 'Rajdhani', 'Outfit', sans-serif;
+  letter-spacing: 0.08em;
+}
+
+/* Custom luxury crimson scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080306;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b111a;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
+
+/* Luxury Crimson, Ruby & Metallic Text */
+.red-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #fecaca 25%, #ef4444 60%, #b91c1c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ruby-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #ffe4e6 20%, #f43f5e 55%, #be123c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #fef08a 25%, #f59e0b 60%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.silver-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Ultra Clean Luxury Red-Tinted Glass Card */
+.luxury-glass-card {
+  background: linear-gradient(180deg, rgba(24, 10, 18, 0.75) 0%, rgba(15, 6, 12, 0.92) 100%);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(239, 68, 68, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+}
+
+.luxury-glass-card:hover {
+  border-color: rgba(239, 68, 68, 0.4);
+  box-shadow: 0 12px 40px -8px rgba(220, 38, 38, 0.22);
+}
+
+/* Bank-Grade Security Shield Card in Crimson & Emerald */
+.security-shield-card {
+  background: linear-gradient(135deg, rgba(127, 29, 29, 0.25) 0%, rgba(18, 7, 14, 0.96) 50%, rgba(6, 78, 59, 0.2) 100%);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* Alive Red Glowing Line */
+@keyframes alive-red-glow {
+  0%, 100% {
+    opacity: 0.65;
+    transform: scaleX(0.94);
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.5), 0 0 24px rgba(220, 38, 38, 0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+    box-shadow: 0 0 22px rgba(239, 68, 68, 0.95), 0 0 45px rgba(220, 38, 38, 0.6);
+  }
+}
+
+.alive-glowing-line {
+  animation: alive-red-glow 2.5s ease-in-out infinite;
+}
+
+/* Alive Circular Red Logo */
+@keyframes alive-red-circle-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.75), 0 0 18px rgba(220, 38, 38, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 7px rgba(239, 68, 68, 0), 0 0 32px rgba(239, 68, 68, 0.85);
+    transform: scale(1.05);
+  }
+}
+
+.alive-logo-circle {
+  animation: alive-red-circle-pulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Security Badge Glow */
+@keyframes shield-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(239, 68, 68, 0);
+  }
+}
+
+.shield-pulse-badge {
+  animation: shield-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Ultra-Fast Rendering & GPU Acceleration Performance Rules */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gpu-accelerate {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}
+
+/* Image Optimization */
+img {
+  content-visibility: auto;
+}
+
+
+
