@@ -1,0 +1,21 @@
+import { GamingAccount } from '../types';
+
+export const GAMING_ACCOUNTS: GamingAccount[] = [];
+
+export const POPULAR_TAGS = [
+  'SAKURA BUNDLE (S1)',
+  'HIP HOP BUNDLE (S2)',
+  'RED CRIMINAL',
+  'GOLDEN CRIMINAL',
+  'YELLOW CRIMINAL',
+  'RED ANGELIC PANTS',
+  'GREEN ANGELIC PANTS',
+  'BLUE FLAME DRACO AK47',
+  'PREDATORY COBRA MP40',
+  'GOJO BUNDLE',
+  'ITACHI BUNDLE',
+  'ALL 22 EVO GUNS',
+  'TITAN SCAR',
+  'ENTRY ANIMATIONS'
+];
+
